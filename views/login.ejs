@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <title>Sign-In</title>
+</head>
+<body class="bg-dark text-white">
+
+  <style>
+    h1{
+      
+    text-align: center;
+    color: darkgreen;
+    border-bottom: 1px double;
+    border-bottom-color: brown;
+    text-shadow: 1px 1px 1px black;
+    margin: 15px;
+    padding: 10px;
+    font-variant-caps: petite-caps;
+
+    }
+
+    form{
+      display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    align-items: center;
+    width: 100%;
+    border: 1px double red;
+    background: yellow;
+    }
+
+    .mb-3{
+      
+    margin: 15px;
+    font-size: xx-large;
+    font-weight: bold;
+    color: black;
+    -webkit-text-stroke: thin;
+    }
+
+    button{
+      font-size: x-large;
+    font-family: fantasy;
+    color: saddlebrown;
+    padding: 8px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    border-bottom: outset;
+    border-color: blueviolet;
+
+    }
+    
+
+    input:active{
+      border-color:pink;
+    }
+  </style>
+ 
+    <div class="container mt-4 col-4 col-offset-6">
+        <h1 class="display-3">Login-up form</h1>
+        <form method="POST" action="/api/v1/login" enctype="multipart/form-data">
+            
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="text" name="email" class="form-control" id="email" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password:</label>
+              <input type="password" name="password" class="form-control" id="password" aria-describedby="emailHelp">
+            </div>
+            
+            <button type="submit" id="action" class="btn btn-primary">Sign-In</button>
+            <button type="submit" class="btn btn-primary"><a href="/signup">Sign-Up</a></button>
+          </form>
+    </div>
+    
+</body>
+</html>
